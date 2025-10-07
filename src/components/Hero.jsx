@@ -1,12 +1,12 @@
 import React from 'react';
 import { Rocket, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
-import AnimatedOrbs from './AnimatedOrbs';
+import BackgroundParticleNetwork from './BackgroundParticleNetwork';
 
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden">
-      <AnimatedOrbs />
+      <BackgroundParticleNetwork />
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 pt-28 pb-20 md:pt-36 md:pb-28">
         <motion.div
@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur"
-        >
+       >
           <Sparkles className="h-3.5 w-3.5 text-yellow-300" />
           Introducing AuraThumb AI
         </motion.div>
